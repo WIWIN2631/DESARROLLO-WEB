@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-principal-verde: #4CAF50;
+    --color-principal-naranaja: #ff3c00;
+
+    --fondo-secciones-claro: #efece3;
+
+    --fuente-titulos: 'Lora', serif;
+    --tamano-titulos-1: 35px;
+
+    --tamano-margenes-bloques: 100px;
+
+    --borde-redondeado: 10px;
+    --borde-grosor: 3px;
+    --borde-color: var(--color-principal-naranaja);
+    --padding-botones: 10px;
+}
+
+.botones-cabecera a{
+    border: var(--borde-grosor) solid var(--borde-color);
+    text-decoration: none;
+    border-radius: var(--borde-redondeado);
+
+    padding: var(--padding-boton);
+}       

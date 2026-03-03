@@ -6,11 +6,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+    font-family: 'Hind Madurai', sans-serif;
+    background-color: var(--fondo-secciones-claro);
+}
+
 :root{
-    --color-principal-verde: #4CAF50;
+    --color-principal-verde: #4d824f;
     --color-principal-naranaja: #ff3c00;
 
-    --fondo-secciones-claro: #efece3;
+    --fondo-secciones-claro: #050041;
 
     --fuente-titulos: 'Lora', serif;
     --tamano-titulos-1: 35px;

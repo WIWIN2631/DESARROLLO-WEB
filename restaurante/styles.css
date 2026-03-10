@@ -17,6 +17,8 @@
     --feuntes-parrafos: "Playlist Script";
 
     --sombra-botones-clara: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    --margen-interna-secciones: 50px;
 }
 
 header{
@@ -114,4 +116,167 @@ nav ul li a{
     z-index: 1;
 }
 
+.rollos{
+    background-color: var(--color-texto-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--margen-interna-secciones);
+    color: var(--color-fondo-principal);
+    gap: 30px;
+}
 
+.rollos-contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.rollos-descripcion{
+    flex: 1;
+    width: 100%;
+
+    h2{
+        font-family: var(--fuente-titulos);
+        font-size: 4rem;
+        line-height: 50px;
+    }
+    h3{
+        font-family: var(--fuente-titulos);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: var(--color-detalle-verde);
+        background-color: var(--color-fondo-principal);
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.rollos-productos{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.rollo-producto{
+    border: 1px solid var(--color-btn-naranja);
+    border-radius: 10px;
+    background-color: var(--color-btn-naranja);
+}
+
+.contenido-rollo{
+    padding: 20px;
+    overflow: hidden;
+    font-family: var(--feuntes-parrafos);
+
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: var(--fuente-titulos);
+    }
+    h3{
+        font-size: 1.2rem;
+        font-family: var(--fuente-titulos);
+    }
+    ul{
+        margin: 15px 0px;
+        margin-left: 20px;
+    }
+    .precio{
+        font-size: 1.5rem;
+    }
+    .precio a{
+        text-decoration: none;
+        color: var(--color-detalle-verde);
+        background-color: var(--color-fondo-principal);
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.rollo-producto img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.estilos-boton{
+    text-decoration: none;
+    color: var(--color-detalle-verde);
+    background-color: var(--color-fondo-principal);
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.rollos-ingredientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    .rollo-ingrediente{
+        background-color: var(--color-detalle-verde);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        padding: 15px;
+        border-radius: 0px 10px 0px 10px;
+    }
+}
+
+.menu-dia{
+    background-color: var(--color-fondo-principal);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: var(--margen-interna-secciones);
+    text-align: center;
+
+    h2{
+        font-family: var(--fuente-titulos);
+        font-size: 3rem;
+    }
+    .menu-items{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .opcion-almuerzo{
+        box-shadow: var(--sombra-botones-clara);
+        padding: 20px;
+        border-radius: 20px;
+        text-align: left;
+        width: 230px;
+
+        img{
+            border-radius: 10px;
+            width: 100%;
+            object-fit: cover;
+        }
+        ul{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    a{
+        background-color: var(--color-texto-principal);
+        color: var(--color-fondo-principal);
+    }
+}

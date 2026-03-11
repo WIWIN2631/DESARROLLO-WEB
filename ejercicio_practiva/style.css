@@ -30,13 +30,13 @@ body{
         text-transform: uppercase;
         font-size: 1.5rem;  /*16px * 1.5 = 24px*/
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: black;
+        color: #0f172a;
         margin: 20px 20px;
     }
 
     .ejercicio{
         padding: 10px;
-        background: greenyellow;
+        background: #1e3a8a;
 background: radial-gradient();
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -53,11 +53,11 @@ background: radial-gradient();
         text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.62);
     }
     p{
-        color: rgb(77, 77, 77);
+        color: #e0f2fe;
         font-weight: 600;
         text-align: center;
         max-width: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
 
@@ -78,11 +78,11 @@ background: radial-gradient();
         border-top: 0px;
         border-left: 0px;
         border-right: 0px;
-        border-bottom: 0.5px solid rgb(77, 77, 77);
+        border-bottom: 0.5px solid #1e40af;
         width: 100%;
         font-size: 2rem;
         padding-top: 10px;
-        color: royalblue;
+        color: #1e40af;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 700;
         text-align: center;
@@ -96,15 +96,44 @@ button{
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: green;
+    background-color: #0f172a;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.resultado{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    display: none;
+
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #e0f2fe;
+        color: rgb(0, 212, 250);
+        margin: 5px 0;
+    }
 }
 
 button:active{
-    box-shadow: rgba(157, 157, 239, 0.25) 0px 30px 60px -12px inset, rgba(64, 15, 240, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(1#1e40af57, 239, 0.25) 0px 30px 60px -12px inset, rgba(64, 15, 240, 0.3) 0px 18px 36px -18px inset;
     background-color: green;
     transition: all ease-in 5s;
 }
 
 button:hover{
     transform: translateY(-5px);
+}
+
+#resultadoImc{
+    display: none;
 }

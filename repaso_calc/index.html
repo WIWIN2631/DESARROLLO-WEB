@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calculadora</h1>
+
+        <div  class="operaciones">
+
+            <p>Ingrese dos números para realizar operaciones:</p>
+
+            <div class="input-group">
+                <label for="num1">Ingrese el primer número:</label>
+                <input type="number" id="num1" placeholder="Número 1">
+            </div>
+            <div class="input-group">
+                <label for="num2">Ingrese el segundo número:</label>
+                <input type="number" id="num2" placeholder="Número 2">
+    
+            </div>
+        
+            <button type="submit">Calcular</button>
+
+            <div id="resultadoCal" cclass="resultado">
+                <p id="suma"></p>
+                <p id="resta"></p>
+                <p id="multiplicacion"></p>
+                <p id="division"></p>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>

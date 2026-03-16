@@ -1,0 +1,85 @@
+*{
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    max-width: 80vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: hwb(0 100% 0%);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.operaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(16, 16, 151);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.operaciones button{
+    width: 500px;  
+    height: 60px;
+    margin: 20px;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(5, 5, 47);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.input-group{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+
+    label{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    input{
+        width: 390px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+    
+    
+}
+
+/* Evita el espacio extra generado por los <p> vacíos dentro de #resultadoCal */
+.operaciones p {
+    margin: 0;
+    padding: 0;
+}
+
+#resultadoCal {
+    margin: 0;
+    padding: 0;
+}
+
+.operaciones p{
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0;
+
+}
+
